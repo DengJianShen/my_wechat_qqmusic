@@ -1,0 +1,55 @@
+<import src="/template/apptip/apptip.wxml" />
+<import src="/template/footer/footer.wxml" />
+<template name="recommend">
+  <view class="recommend__slider">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{subPageData.slider}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item.picUrl}}" class="recommend__slider__image" width="100%" height="100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="recommend__radio-list">
+    <text class="recommend__list-title">电台</text>
+    <view class="recommend__list-container">
+      <block wx:for="{{subPageData.radioList}}" wx:key="unique">
+        <view class="recommend__item" data-id="{{item.radioid}}">
+          <navigator url="/page/navigate/navigate?title=navigate" class="clearfix">
+            <view class="recommend__media">
+              <image class="recommend__media__image" width="100%" height="100%" src="{{item.picUrl}}" />
+              <view class="recommend__media__icon"></view>
+            </view>
+            <view class="recommend__info">
+              <text class="recommend__info__title">{{item.Ftitle}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="recommend__song-list">
+    <text class="recommend__list-title">热门歌单</text>
+    <view class="recommend__list-container">
+      <block wx:for="{{subPageData.songList}}" wx:key="unique">
+        <view class="recommend__item" data-id="{{item.id}}">
+          <navigator url="/page/navigate/navigate?title=navigate" class="clearfix">
+            <view class="recommend__media">
+              <image class="recommend__media__image" width="100%" height="100%" src="{{item.picUrl}}" />
+              <view class="recommend__media__listen-count">
+                <view class="recommend__media__listen-count__icon"></view>
+                {{item.accessnum}}
+              </view>
+              <view class="recommend__media__icon"></view>
+            </view>
+            <view class="recommend__info">
+              <text class="recommend__info__title">{{item.songListDesc}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </view>
+  <template is="apptip" />
+  <template is="footer" />
+</template>

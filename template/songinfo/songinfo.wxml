@@ -1,0 +1,12 @@
+<template name="songinfo">
+  <view class="song-info">
+    <view class="song-info__img-box">
+      <image class="song-info__img-box__thumb" wx:if="{{songmsg.albummid}}" src="https://y.gtimg.cn/music/photo_new/T002R150x150M000{{songmsg.albummid}}.jpg?max_age=2592000" />
+    </view>
+    <view class="song-info__msg-box">
+      <text class="song-info__msg-box__song-name">{{songmsg.songname}}</text>
+      <text class="song-info__msg-box__singer-name">{{songmsg.songsinger}}</text>
+    </view>
+    <view class="song-info__control {{playState ? 'pause' : ''}}" bindtap="audioControl"></view>
+  </view>
+</template>

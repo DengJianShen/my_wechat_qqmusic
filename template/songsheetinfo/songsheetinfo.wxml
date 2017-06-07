@@ -1,0 +1,15 @@
+<template name="songsheetinfo">
+  <view class="songsheetinfo">
+    <view class="songsheetinfo__bg" style="background-image:url({{topinfo.pic_album}})"></view>
+    <view class="songsheetinfo__body">
+      <view class="songsheetinfo__body__info">
+        <view class="songsheetinfo__body__info__text-box">
+          <view class="songsheetinfo__body__info__text-box__title" wx:if="{{topinfo.ListName}}">{{topinfo.ListName}}</view>
+          <text class="songsheetinfo__body__info__text-box__desc" wx:if="{{updatetime}}">{{updatetime}} 更新</text>
+        </view>
+        <view class="songsheetinfo__body__info__play-icon" wx:if="{{updatetime}}"></view>
+      </view>
+    </view>
+    <view class="songsheetinfo__gradient"></view>
+  </view>
+</template>

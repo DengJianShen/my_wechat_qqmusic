@@ -1,0 +1,95 @@
+.songsheetinfo {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.songsheetinfo__bg {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.songsheetinfo__bg::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.songsheetinfo__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-image: -webkit-linear-gradient(top, transparent, currentColor 80%);
+}
+
+.songsheetinfo__gradient::after {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+
+.songsheetinfo__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.songsheetinfo__body__info {
+  display: flex;
+  margin: 0 15px 25px;
+}
+
+.songsheetinfo__body__info__text-box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.songsheetinfo__body__info__text-box__title {
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.songsheetinfo__body__info__text-box__desc {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #fff;
+}
+
+.songsheetinfo__body__info__play-icon {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  border: solid 3px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.songsheetinfo__body__info__play-icon::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  height: 0;
+  width: 0;
+  line-height: 999em;
+  overflow: hidden;
+  border-color: transparent transparent transparent currentColor;
+  border-width: 9px 15px;
+  border-style: solid;
+}

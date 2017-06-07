@@ -1,0 +1,7 @@
+<template name="tabs">
+    <view class="tabs">
+       <view class="tabs__tab {{selected == 'recommend' ? 'active' : ''}}" bindtap="setView" data-nav="recommend">推荐</view>
+       <view class="tabs__tab {{selected == 'rank' ? 'active' : ''}}" bindtap="setView" data-nav="rank">排行榜</view>
+       <view class="tabs__tab {{selected == 'search' ? 'active' : ''}}" bindtap="setView" data-nav="search">搜索</view>
+    </view>
+</template>

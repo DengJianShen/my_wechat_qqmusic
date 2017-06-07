@@ -1,0 +1,3 @@
+@import "/template/songsheetinfo/songsheetinfo.wxss";
+@import "/template/songsheetlist/songsheetlist.wxss";
+@import "/template/downloadbtn/downloadbtn.wxss";

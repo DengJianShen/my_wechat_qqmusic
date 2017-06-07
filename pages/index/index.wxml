@@ -1,0 +1,9 @@
+<import src="/template/header/header.wxml"/>
+<import src="/template/tabs/tabs.wxml"/>
+<import src="/template/recommend/recommend.wxml"/>
+<import src="/template/rank/rank.wxml"/>
+<import src="/template/search/search.wxml"/>
+
+<template is="header"/>
+<template is="tabs" data="{{selected}}"/>
+<template is="{{selected}}" data="{{subPageData,searchState,resultState,searchRecord,searchRusult}}"/>

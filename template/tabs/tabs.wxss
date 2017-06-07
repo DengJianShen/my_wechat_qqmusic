@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+}
+
+.tabs__tab {
+  flex: 1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid transparent;
+}
+
+.tabs__tab.active {
+    color: #31c27c;
+    border-color:#31c27c;
+}

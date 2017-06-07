@@ -1,0 +1,13 @@
+<template name="songprogress">
+  <audio id="music" bindtimeupdate="updateProgress" wx:if="{{songmsg.songmid}}" src="http://dl.stream.qqmusic.qq.com/C400{{songmsg.songmid}}.m4a?fromtag=38&vkey=A7D8E9980BEB9F0F614332977D2DDB906A354B31991CD4AE2F6E56A74EE9C8FAE2531245A803E297857AFC43892482438DAD046EAE2FAA15&guid=6135734464"
+  controls="{{false}}" loop="{{false}}"></audio>
+  <view class="songprogress-box">
+    <text class="songprogress-box__text">{{currTime}}</text>
+    <view class="songprogress-box__bar">
+      <view class="songprogress-box__bar-box">
+        <view class="songprogress-box__bar-box__inner" style="width:{{playLen}}"></view>
+      </view>
+    </view>
+    <text class="songprogress-box__text">{{duration}}</text>
+  </view>
+</template>

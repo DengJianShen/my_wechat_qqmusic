@@ -1,0 +1,15 @@
+<import src="/template/songinfo/songinfo.wxml" />
+<import src="/template/songlyric/songlyric.wxml" />
+<import src="/template/songoperation/songoperation.wxml" />
+<import src="/template/songprogress/songprogress.wxml" />
+<import src="/template/downloadtip/downloadtip.wxml" />
+<view class="songplay__bg">
+  <view class="songplay__bg__img" wx:if="{{songmsg.albummid}}" style="background-image:url(https://y.gtimg.cn/music/photo_new/T002R150x150M000{{songmsg.albummid}}.jpg?max_age=2592000)">
+  </view>
+  <view class="songplay__bg__mask"></view>
+</view>
+<template is="songinfo" data="{{songmsg,playState}}" />
+<template is="songlyric" data="{{songmsg}}" />
+<template is="songoperation" data="{{songList}}" />
+<template is="songprogress" data="{{songmsg,currTime,duration,playLen}}" />
+<template is="downloadtip" />

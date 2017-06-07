@@ -1,0 +1,38 @@
+.songprogress-box {
+  position: absolute;
+  bottom: 74px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.songprogress-box__text {
+  display: block;
+  width: 55px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #808080;
+  font-size: 12px;
+}
+
+.songprogress-box__bar {
+  width: calc(100vw - 110px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.songprogress-box__bar-box {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #808080;
+}
+
+.songprogress-box__bar-box__inner {
+  width: 0%;
+  height: 2px;
+  background-color: #31c27c;
+}

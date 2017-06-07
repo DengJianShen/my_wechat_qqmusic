@@ -1,0 +1,48 @@
+.cd-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.cd-gan {
+    position: absolute;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -75px;
+    display: block;
+    width: 150px;
+    height: 100px;
+    background: url('../../images/cd_g.png');
+    background-size: cover;
+    z-index: 10;
+}
+.cd-inner {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    height: 250px;
+    width: 250px;
+    background: url('../../images/cd_b.png');
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    
+}
+.cd-animation {
+    -webkit-animation:circle 10s infinite linear;
+    animation:circle 10s infinite linear;
+}
+.cd-img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+      transition: all .4s;
+}
+
+@keyframes circle{
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
+}

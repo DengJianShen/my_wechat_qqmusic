@@ -1,0 +1,39 @@
+@import "/template/songinfo/songinfo.wxss";
+@import "/template/songlyric/songlyric.wxss";
+@import "/template/songoperation/songoperation.wxss";
+@import "/template/songprogress/songprogress.wxss";
+@import "/template/downloadtip/downloadtip.wxss";
+
+page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.songplay__bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.songplay__bg__img {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(15px);
+  transform: scale(1.15);
+}
+
+.songplay__bg__mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}

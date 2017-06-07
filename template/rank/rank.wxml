@@ -1,0 +1,30 @@
+<import src="/template/apptip/apptip.wxml"/>
+<template name="rank">
+  <view class="rank-list">
+    <block wx:for="{{subPageData.topList}}" wx:key="unique">
+      <navigator url="/pages/songsheet/index?topid={{item.id}}">
+        <view class="rank-list__item" data-id="{{item.id}}" data-type="{{item.type}}">
+          <view class="rank-list__item__main">
+            <image src="{{item.picUrl}}" class="rank-list__item__main__image" />
+            <view class="rank-list__item__main__listen">
+              <view class="rank-list__item__main__listen__icon"></view>{{item.listenCount}}
+            </view>
+          </view>
+          <view class="rank-list__item__info">
+            <view class="rank-list__item__info__cont">
+              <text class="rank-list__item__info__cont__title">{{item.topTitle}}</text>
+              <block wx:for="{{item.songList}}" wx:key="unique">
+                <view class="rank-list__item__info__cont__content">
+                  {{index+1}}
+                  <text class="rank-list__item__info__cont__content__text">{{item.songname}}</text> - {{item.singername}}
+                </view>
+              </block>
+            </view>
+            <view class="rank-list__item__info__arrow"></view>
+          </view>
+        </view>
+    </navigator>        
+    </block>
+    <template is="apptip"/>    
+  </view>
+</template>

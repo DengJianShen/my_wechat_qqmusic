@@ -1,0 +1,6 @@
+<template name="songoperation">
+  <view class="songoperation-box">
+    <view class="songoperation-box__operation--left" wx:if="{{songList}}"></view>
+    <view class="songoperation-box__operation--right" bindtap="signintip"></view>
+  </view>
+</template>

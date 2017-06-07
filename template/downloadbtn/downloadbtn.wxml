@@ -1,0 +1,5 @@
+<template name="downloadbtn">
+  <view class="downloadbtn-box">
+    <view class="downloadbtn-box__btn">下载榜单歌曲</view> 
+  </view>
+</template>

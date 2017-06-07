@@ -1,0 +1,5 @@
+<template name="apptip">
+<text class="app-tip">
+去客户端发现更多好音乐 >
+</text>
+</template>

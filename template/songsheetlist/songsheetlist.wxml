@@ -1,0 +1,13 @@
+<template name="songsheetlist">
+  <view class="songsheetlist">
+    <block wx:for="{{songlist}}" wx:key="unique">
+      <view class="songsheetlist__item">
+        <view class="songsheetlist__item__index">{{index+1}}</view>
+        <view class="songsheetlist__item__body">
+          <text class="songsheetlist__item__body__title">{{item.data.albumname}}</text>
+          <text class="songsheetlist__item__body__desc">{{item.data.singer[0].name}}·{{item.data.albumname}}·{{item.data.albumdesc}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

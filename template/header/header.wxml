@@ -1,0 +1,5 @@
+<template name="header">
+  <view class="header">
+    <image class="header__logo" src="https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/logo.png?max_age=19830212&d=20151105145423"></image>
+  </view>
+</template>

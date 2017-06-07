@@ -1,0 +1,39 @@
+.songsheetlist {
+  border-color: rgba(255, 255, 255, 0.15);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.songsheetlist__item {
+  display: flex;
+  height: 60px;
+  padding-left: 10px;
+}
+.songsheetlist__item__index{
+    width: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+.songsheetlist__item__body{
+    flex: 1;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.songsheetlist__item__body__title{
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display:block;
+}
+.songsheetlist__item__body__desc{
+overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+        color: rgba(255,255,255,.6);
+    display:block;
+}

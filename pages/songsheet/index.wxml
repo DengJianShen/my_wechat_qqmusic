@@ -1,0 +1,6 @@
+<import src="/template/songsheetinfo/songsheetinfo.wxml" />
+<import src="/template/songsheetlist/songsheetlist.wxml" />
+<import src="/template/downloadbtn/downloadbtn.wxml" />
+<template is="songsheetinfo" data="{{topinfo,updatetime}}"/>
+<template is="songsheetlist" data="{{songlist}}"/>
+<template is="downloadbtn" />

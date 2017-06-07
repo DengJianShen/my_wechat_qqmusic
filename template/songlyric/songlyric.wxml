@@ -1,0 +1,8 @@
+<template name="songlyric">
+    <view class="cd-info">
+        <view class="cd-gan"></view>
+        <view class="cd-inner cd-animation">
+            <image class="cd-img" wx:if="{{songmsg.albummid}}" src="https://y.gtimg.cn/music/photo_new/T002R150x150M000{{songmsg.albummid}}.jpg?max_age=2592000"></image>
+        </view>
+    </view>
+</template>

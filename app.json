@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/songplay/index",
+    "pages/songsheet/index",
+    "pages/radiostation/index",
+    "pages/songsheetplay/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#20282b"
+  }
+}

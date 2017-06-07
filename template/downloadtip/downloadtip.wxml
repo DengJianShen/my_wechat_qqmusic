@@ -1,0 +1,5 @@
+<template name="downloadtip">
+  <view class="downloadtip-box">
+    <view class="downloadtip-box__btn">免费下载这首歌</view>
+  </view>
+</template>

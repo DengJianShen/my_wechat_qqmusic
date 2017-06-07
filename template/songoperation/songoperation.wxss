@@ -1,0 +1,18 @@
+.songoperation-box {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+}
+
+.songoperation-box__operation--right {
+  width: 25px;
+  height: 21px;
+  margin-top: 10px;
+  background-image: url('https://y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007');
+  background-repeat: no-repeat;
+  background-size: 40px 350px;
+  margin-right: 15px;
+  float: right;
+}
